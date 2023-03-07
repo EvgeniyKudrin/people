@@ -49,7 +49,7 @@ public class Person {
     public void happyBirthday() {
         if (hasAge()) age++;
     }
-    public PersonBuilder newChildBuilder() throws IllegalAccessException {
+    public PersonBuilder newChildBuilder()  {
         return new PersonBuilder()
                 .setSurname(surname)
                 .setAddress(address);

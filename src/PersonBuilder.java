@@ -4,15 +4,15 @@ public class PersonBuilder {
     private int age = -1;
     private String address;
 
-    public PersonBuilder setName(String name) throws IllegalAccessException {
+    public PersonBuilder setName(String name) throws IllegalArgumentException {
         if (name == null || name.isEmpty()) {
-            throw new IllegalAccessException("Не хватает обязательных полей");
+            throw new IllegalArgumentException("Не хватает обязательных полей");
         } else this.name = name;
         return this;
     }
-    public PersonBuilder setSurname(String name) throws IllegalAccessException {
+    public PersonBuilder setSurname(String name) throws IllegalArgumentException {
         if (surname == null || surname.isEmpty()) {
-            throw new IllegalAccessException("Не хватает обязательных полей");
+            throw new IllegalArgumentException("Не хватает обязательных полей");
         }else this.surname = surname;
         return this;
     }
